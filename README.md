@@ -1,12 +1,17 @@
 estnltk-1.4-light
 =================
 
-This is a heavily stripped-down version of [estnltk 1.4](https://github.com/estnltk/estnltk/tree/eef59a766005fd082d486816d3f221b4c4f3d632) which only includes core instruments for text tokenization and morphological analysis including lemmatization.
+Estnltk-1.4-light is a heavily stripped-down version of [estnltk 1.4](https://github.com/estnltk/estnltk/tree/eef59a766005fd082d486816d3f221b4c4f3d632) which includes only the core instruments for text tokenization and morphological analysis including lemmatization.
 
 
 ## Installation
 
 Estnltk-1.4-light was tested on Ubuntu 18.04 with Python 2.7 and 3.6, but is very likely to work with other OS/python types as well.
+
+
+Installing from PyPi:
+
+    pip install estnltk-1.4-light
 
 Installing from source:
 
@@ -14,10 +19,6 @@ Installing from source:
     pip install -r requirements.txt
     python setup.py build 
     python setup.py install
-
-From PyPy:
-
-    TODO
 
 Post-installation check:
 

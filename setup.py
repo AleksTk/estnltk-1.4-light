@@ -44,9 +44,7 @@ if sys.version_info[0] == 3:
 swig_opts.append('-c++')
 
 setup(
-    name="estnltk",
-
-    # change the version in file `estnltk/__about__.py`
+    name="estnltk-1.4-light",
     version=__version__,
 
     packages=find_packages(),
@@ -56,20 +54,11 @@ setup(
         'estnltk.converters': ['*.mrf'],
     },
 
-    author="University of Tartu",
-    author_email="siim.orasmaa@gmail.com, alex.tk.fb@gmail.com, tpetmanson@gmail.com, swen@math.ut.ee",
-    description="Estnltk — open source tools for Estonian natural language processing",
-    long_description='''
-Estnltk -- Open source tools for Estonian natural language processing
-=====================================================================
-
-Estnltk provides common natural language processing functionality such as paragraph, sentence and word tokenization,
-morphological analysis, named entity recognition, etc. for the Estonian language.
-
-
-    ''',
+    author="Alexander Tkachenko",
+    author_email="alex.tk.fb@gmail.com",
+    description="Estnltk-1.4-light is a heavily stripped-down version of estnltk 1.4 which only includes core instruments for text tokenization and morphological analysis including lemmatization.",
     license="GPLv2",
-    url="https://github.com/estnltk/estnltk",
+    url="https://github.com/AleksTk/estnltk-1.4-light",
     ext_modules=[
         Extension('estnltk.vabamorf._vabamorf',
                   [swig_interface, vabamorf_src] + lib_sources,

@@ -1,0 +1,15 @@
+*.pyc
+estnltk.egg-info/
+
+.env/
+.idea/
+.cache
+.ipynb_checkpoints
+
+/estnltk/vabamorf/vabamorf.py
+/estnltk/vabamorf/vabamorf_wrap.cpp
+/estnltk/vabamorf/_vabamorf*so
+
+dist/
+build/
+_build
